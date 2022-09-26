@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#SBATCH --partition=shared
+#SBATCH --job-name="CASTEP"
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=20
+#SBATCH --time=00:20:00
+#SBATCH --constraint=[e5-2660-v4|gold-5120]
+#SBATCH --mem=20G
+#SBATCH -o slurm.%N.%j.out 
+#SBATCH -e slurm.%N.%j.err
+
+cd $SLURM_SUBMIT_DIR
+
+module load  castep
+
+mpirun -np $SLURM_NTASKS castep.mpi water

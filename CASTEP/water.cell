@@ -1,0 +1,23 @@
+!Cell structure.
+%BLOCK LATTICE_CART
+   11.29    0.00    0.00
+   0.00    10.57    0.00
+   0.00    0.00    10.72
+%ENDBLOCK LATTICE_CART
+
+!Atom positions within cell.
+%BLOCK POSITIONS_ABS
+O         -1.75044        1.13678        0.00000
+H         -0.78044        1.13678        0.00000
+H         -2.07377        0.57012       -0.71781
+%ENDBLOCK POSITIONS_ABS
+
+SYMMETRY_GENERATE
+FIX_ALL_CELL : TRUE
+FIX_ALL_IONS : FALSE
+FIX_COM : FALSE
+
+
+
+
+
