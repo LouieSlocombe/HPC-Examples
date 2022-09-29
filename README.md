@@ -1,2 +1,2 @@
-# Eureka-HPC-Examples
-Example input files for Eureka HPC
+# HPC-Examples
+Example input files for HPC
