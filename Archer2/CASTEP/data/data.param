@@ -1,0 +1,40 @@
+#######################################################
+#CASTEP param file: data/data.param
+#Created using the Atomic Simulation Environment (ASE)#
+# Internal settings of the calculator
+# This can be switched off by settings
+# calc._export_settings = False
+# If stated, this will be automatically processed
+# by ase.io.castep.read_seed()
+# ASE_INTERFACE _build_missing_pspots : True
+# ASE_INTERFACE _castep_command : srun --distribution=block:block --hint=nomultithread castep.mpi
+# ASE_INTERFACE _castep_pp_path : /mnt/lustre/a2fs-work3/work/e89/e89/louie/ps_pots/
+# ASE_INTERFACE _check_checkfile : True
+# ASE_INTERFACE _copy_pspots : False
+# ASE_INTERFACE _directory : data
+# ASE_INTERFACE _export_settings : True
+# ASE_INTERFACE _find_pspots : False
+# ASE_INTERFACE _force_write : True
+# ASE_INTERFACE _label : data
+# ASE_INTERFACE _link_pspots : True
+# ASE_INTERFACE _pedantic : True
+# ASE_INTERFACE _prepare_input_only : False
+# ASE_INTERFACE _rename_existing_dir : False
+# ASE_INTERFACE _set_atoms : False
+# ASE_INTERFACE _track_output : False
+# ASE_INTERFACE _try_reuse : False
+#######################################################
+
+CUT_OFF_ENERGY: 800.0 
+WRITE_CHECKPOINT: minimal
+OPT_STRATEGY: speed
+XC_FUNCTIONAL: PBE
+SEDC_APPLY: TRUE
+SEDC_SCHEME: MBD*
+FINITE_BASIS_CORR: 0
+SPIN_POLARISED: FALSE
+PERC_EXTRA_BANDS: 50.0
+ELEC_ENERGY_TOL: 1e-06 
+MAX_SCF_CYCLES: 100
+NUM_DUMP_CYCLES: 0
+MIXING_SCHEME: Broyden
