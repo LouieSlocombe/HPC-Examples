@@ -10,7 +10,7 @@ atoms = molecule('H2O')
 
 calc = NWChem(label='calc/nwchem',
               dft=dict(maxiter=100,
-                       xc='B3LYP'),
+                       xc='BLYP'),
               basis='6-31+G*')
 
 atoms.calc = calc
