@@ -11,7 +11,8 @@ atoms = molecule('H2O')
 calc = NWChem(label='calc/nwchem',
               dft=dict(maxiter=100,
                        xc='lyp'),
-              basis='6-31+G*')
+              basis='6-31+G*',
+              print="medium")
 
 atoms.calc = calc
 
